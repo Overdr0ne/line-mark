@@ -1,0 +1,17 @@
+#+TITLE: line-mark: line marking in emacs
+
+* Introduction
+Emacs has rect-mark-mode for marking rectangles, much like VIM’s visual block mode, this package just adds line-mark-mode for marking lines, like VIM’s visual line mode.
+
+* Installation
+I just use straight+use-package like so:
+#+begin_src elisp
+  (use-package line-mark
+    :straight (line-mark :type git
+                         :host github
+                         :repo "Overdr0ne/line-mark"
+                         :branch "main"))
+#+end_src
+
+* Usage
+Just enable the mode to start marking lines with the ~line-mark-mode~ command.
